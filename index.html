@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de margin collapsing</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Elementos anidados con Margin Collapsing</h2>
+    <div class="container">
+        <div id="parent-collapsing">
+            <div class="child">
+            </div>
+        </div>
+    </div>
+
+    <h2>Elementos anidados sin Margin Collapsing</h2>
+    <div class="container">    
+        <div id="parent-nocollapsing">
+            <div class="child">
+            </div>
+        </div>
+    </div>
+
+    <h2>Elementos adyancentes con Margin Collapsing</h2>
+    <div class="container">
+        <div class="sibling-collapsing">
+        </div>
+
+        <div class="sibling-collapsing">
+        </div>
+
+        <div class="sibling-collapsing">
+        </div>
+    </div>
+
+    <h2>Elementos adyancentes sin Margin Collapsing</h2>
+    <div class="container">
+        <div class="sibling-nocollapsing">
+        </div>
+
+        <div class="sibling-nocollapsing">
+        </div>
+
+        <div class="sibling-nocollapsing">
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>

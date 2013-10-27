@@ -1,0 +1,45 @@
+
+.container {
+    background: #E5E5E5;
+    border: 1px solid black;
+    width: 400px;
+}
+
+#parent-collapsing {
+    background: red;
+    margin: 20px;
+}
+
+#parent-nocollapsing {
+    background: red;
+    margin: 20px;
+    /*padding en el padre para eviitar margin collapsing con su hijo*/
+    padding: 1px;
+}
+
+.child {
+    margin: 20px;
+    background: blue;
+    height: 55px;
+}
+
+.sibling-collapsing {
+    margin: 10px;
+    background: Yellow;
+    height: 50px;
+    width: 380px;
+}
+
+.sibling-nocollapsing {
+    margin: 10px;
+    background: Yellow;
+    height: 50px;
+    width: 380px;
+    /*float left junto con elemento clear para evitar margin collapsing*/
+    float: left; 
+}
+
+/*float left junto con elemento clear para evitar margin collapsing*/
+.clear {
+    clear: both;
+}
